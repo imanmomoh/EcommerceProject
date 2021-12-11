@@ -66,6 +66,93 @@
     color: #555;
   }
 
+  /* Hero css */
+/* Hero Image css */
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  padding: 9px 14px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: burlywood
+}
+
+p {
+  color: #555;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/inm\ hero.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container {
+  margin: 0 auto;
+  font-size: 50px;
+  color: rgb(231, 224, 220);
+  width: 65%;
+  font-weight: 400;
+  border-radius: 7px;
+  transition: 600ms;
+  padding: 20px;
+  padding-bottom: 35px;
+}
+
+.hero-text {
+  color: rgba(236, 232, 228, 0.863);
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 30px;
+  font-weight: 200;
+  padding: 20px;
+}
+
+.hero-text p {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+  color: white;
+}
+
+.newcontainer {
+  position: relative;
+  width: 100%;
+  height: 345px;
+  background-color: rgb(230, 149, 20);
+  margin: 8px;
+  border-radius: 12px;
+  top: 0;
+  transition: 0.5s;
+}
+
+.newcontainer:hover {
+  transform: scale(0.9);
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  color: black;
+}
+
+
+
+
 
 
 
