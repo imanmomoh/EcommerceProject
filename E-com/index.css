@@ -4,6 +4,7 @@
     list-style: none;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
+
   }
   
   .navbar {
@@ -41,10 +42,6 @@
     /* margin: 5px;
     margin-bottom: 2px; */
   }
- navbar nav ul li a:hover{
-    
-    color: orange;
-}
   
   nav ul li {
     display: inline-block;
@@ -70,7 +67,7 @@
 /* Hero Image css */
 a {
   text-decoration: none;
-  color: white;
+  color: rgb(13, 3, 145);
   font-size: 17px;
   padding: 9px 14px;
   border-radius: 3px;
@@ -78,11 +75,11 @@ a {
 }
 
 a:hover {
-  color: burlywood
+  color: rgb(135, 222, 218)
 }
 
 p {
-  color: #555;
+  color: rgb(145, 143, 143);
 }
 
 .hero-image {
@@ -110,28 +107,32 @@ p {
 }
 
 .hero-text {
-  color: rgba(236, 232, 228, 0.863);
+  color: #cb95f0;
   text-align: center;
 }
 
 .hero-text h1 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 200;
   padding: 20px;
+  color: #cb95f0;
+  margin-top: 30px;
+
 }
 
 .hero-text p {
   font-size: 30px;
   font-weight: 500;
   line-height: 40px;
-  color: rgb(123, 123, 126);
+  color: rgb(221, 221, 235);
 }
 
 .newcontainer {
   position: relative;
   width: 100%;
   height: 345px;
-  background-color: rgb(230, 149, 20);
+  /* background-color: rgb(230, 149, 20); */
+  background-color:#cb95f0;
   margin: 8px;
   border-radius: 12px;
   top: 0;
@@ -158,11 +159,15 @@ p {
 
 
    /* footer css */
+   footer {
+    display: flex;
+    flex-direction: row;
+  }
 
 #footer {
     font-size: 15px;
   height: 3rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
   margin-bottom: 5rem;
   color: #423f3f;
   /* text-shadow: 0 1px rgb(255, 254, 254); */
@@ -171,7 +176,9 @@ p {
   text-align: center;
   letter-spacing: .2rem;
   text-transform: uppercase;
-  
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
 }
 
 #footer .footer-text .footer-links a {
@@ -184,9 +191,24 @@ color:black;
     color: #cb95f0;
 }
 
-@media (min-width: 450px){
+@media (max-width: 800px){
   .navbar nav ul li a{
     display: block;
   }
 
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+  
 }

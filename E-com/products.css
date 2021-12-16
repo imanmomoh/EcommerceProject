@@ -14,7 +14,7 @@
   }
   
   nav {
-      height: 106px;
+    height: 106px;
     flex: 1;
     text-align: right;
     background: #cb95f0;
@@ -22,6 +22,9 @@
     margin: 0;
   }
   
+  .hamburgerIcon {
+    display: none;
+  }
   /* .logo {
     height: 81px;
   } */
@@ -41,10 +44,9 @@
     /* margin: 5px;
     margin-bottom: 2px; */
   }
- navbar nav ul li a:hover{
-    
-    color: orange;
-}
+  a:hover {
+    color: rgb(135, 222, 218)
+  }
   
   nav ul li {
     display: inline-block;
@@ -55,7 +57,7 @@
   
   a {
     text-decoration: none;
-    color: white;
+    color: rgb(13, 3, 145);
     font-size: 17px;
     padding: 9px 14px;
     border-radius: 3px;
@@ -72,18 +74,20 @@
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
     align-items: center;
+    justify-items: center;
     
   }
   
   .grid-item {
     display: inline-block;
-    flex-basis: 20%;
+    flex-basis: 90%;
     width: 200px;
     /* min-width: 150px; */
     padding: 31px;
     margin: 10px;
     border: solid 2px #cb95f0;
     border-radius: 40px;
+    box-shadow: 10px 10px 10px #6d5505;
   }
 
   .grid-item img {
@@ -97,12 +101,18 @@
   }
 
   .mycart {
-    color: rgb(233, 91, 10);
+    color: rgb(13, 3, 145);
   }
   
-
+.mycart:hover{
+color: rgb(199, 97, 14)
+}
 
    /* footer css */
+   footer {
+    display: flex;
+    flex-direction: row;
+  }
 
 #footer {
     font-size: 15px;
@@ -116,7 +126,9 @@
   text-align: center;
   letter-spacing: .2rem;
   text-transform: uppercase;
-  
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
 }
 
 #footer .footer-text .footer-links a {
@@ -130,11 +142,51 @@ color:black;
 }
 @media only screen and (max-width: 1024px){
   .grid-container {
-    display: grid;
-    grid-template-columns: repeat (2, 1fr);
-    justify-content: space-between;
-    align-items: center;
-    
+    grid-template-columns: 1fr 1fr;
+   justify-content: center;
   }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
 }
+}
+
   
+  /* .hamburgerIcon {
+    display: block;
+  }
+  .hamburgerIcon div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+
+  @media only screen and (max-width: 1024px){}
+  nav a {
+    display: none;
+  }
+
+  nav ul {
+    margin-top: 17px;
+  display: inline-block;
+  list-style-type: none;
+  margin: 5px;
+  margin-bottom: 2px;
+} */
+
+/* nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  line-height: 80px;
+  margin: 0 5px;
+}
